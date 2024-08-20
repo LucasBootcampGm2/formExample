@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Proyect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Form</h1>
+      <form id="form">
+        <div class="container-inputs">
+          <input
+            type="email"
+            name="input-email"
+            id="input-email"
+            class="form-inputs"
+          />
+          <input
+            type="password"
+            name="input-password"
+            id="input-password"
+            class="form-inputs"
+          />
+        </div>
+        <input id="input-submit" type="submit" value="Enviar" />
+      </form>
+    </main>
+    <footer></footer>
+    <script>
+      let objectsArray = [
+        {
+          email: "lucascirilloberardi@gmail.com",
+          password: "121212",
+        },
+      ];
+
+      let form = document.getElementById("form");
+      let inputEmail = document.getElementById("input-email");
+      let inputPassword = document.getElementById("input-password");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (inputEmail.value && inputPassword.value) {
+          objectsArray.push({
+            email: inputEmail.value,
+            password: inputPassword.value,
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
