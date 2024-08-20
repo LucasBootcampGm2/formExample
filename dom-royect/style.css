@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container-filters {
+  padding: 10px 0;
+}
+
+.filter-inputs {
+  width: 70px;
+  background-color: blue;
+  color: white;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 3px 0 blue;
+  border-radius: 100px;
+  padding: 3px;
+}
