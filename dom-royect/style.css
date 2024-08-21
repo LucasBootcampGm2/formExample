@@ -3,12 +3,15 @@ body {
   margin: 0;
 }
 
-header {
-  display: flex;
-  justify-content: center;
+h2 {
+  margin: 0;
 }
 
-#main {
+p {
+  margin: 0;
+}
+
+#header {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -26,4 +29,42 @@ header {
   box-shadow: 0 0 3px 0 blue;
   border-radius: 100px;
   padding: 3px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 300px;
+  background-color: #040b6a;
+  color: white;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.card-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
